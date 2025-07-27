@@ -1,1 +1,22 @@
 
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/productdb
+
+logging:
+  level:
+    root: INFO
+    com.example.productservice: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+swagger:
+  enabled: true
