@@ -10,7 +10,7 @@ spring:
       uri: mongodb://localhost:27017/productdb
 
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://localhost:8088
 
 eureka:
   client:
